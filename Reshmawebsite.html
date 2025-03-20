@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and text */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* Home Section */
+#home {
+    background-color: #fff;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* Favorite Food Section */
+#favorite-food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.food-item {
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.food-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-description {
+    margin-top: 10px;
+}
+
+.food-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.food-description p {
+    font-size: 1rem;
+}
+
+/* Registration Form */
+#registration form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+#registration input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#registration button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#registration button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+</style>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#favorite-food">Favorite Food</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="resume.pdf" download>Download My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <li><a href="reshma.jpg">Photo</a></li>
+        <h1>Welcome to My Website</h1>
+        <p>Hi, I am Reshma. Welcome to my personal website. Here you can find some of my favorite food items, register for updates, and download my resume!</p>
+    </section>
+
+    <!-- Favorite Food Section -->
+    <section id="favorite-food">
+        <h2>My Favorite Foods</h2>
+        <div class="food-item">
+            <img src="pizza.jpg" alt="Pizza" class="food-img">
+            <div class="food-description">
+                <h3>Pizza</h3>
+                <p>Pizza is my all-time favorite. I love trying different types like pepperoni, veggie, and Margherita!</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="burger.jpg" alt="Burger" class="food-img">
+            <div class="food-description">
+                <h3>Burger</h3>
+                <p>Burgers are the ultimate comfort food. I enjoy a good classic cheeseburger with fries on the side.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="sushi.jpg" alt="Sushi" class="food-img">
+            <div class="food-description">
+                <h3>Sushi</h3>
+                <p>Sushi is a delicious and healthy food option. I enjoy a variety of rolls, especially salmon and tuna!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration">
+        <h2>Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Reshma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
